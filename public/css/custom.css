@@ -1,0 +1,11 @@
+.wrapper{
+  margin: auto;
+  width: 500px;
+  height: auto;
+}
+.wrapper .row{
+  margin: 15px 0;
+}
+.flash{
+  color: red;
+}
