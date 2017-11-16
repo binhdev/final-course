@@ -1,8 +1,8 @@
 <?php
    $dbhost = 'localhost';
    $dbuser = 'root';
-   $dbpass = '';
-   $dbname = 'mydb';
+   $dbpass = 'Jack_zun123';
+   $dbname = 'final-course';
    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
    if(! $conn )
