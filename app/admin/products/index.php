@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
 </head>
 <body>
+  <?php include "../../menucon.php" ?>
   <div class="container">
   <h2>Danh sách</h2>
   <div class="row">
@@ -20,13 +21,13 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Anh</th>
-        <th>Ten san pham</th>
-        <th>Mô ta</th>
-        <th>So luong</th>
-        <th>Gia</th>
-        <th>#</th>
-        <th>#</th>
+        <th>Ảnh</th>
+        <th style="width: 130px;">Tên Sản Phẩm</th>
+        <th>Mô Tả</th>
+        <th style="width: 100px;">Số Lượng</th>
+        <th>Giá</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -52,5 +53,8 @@
     </tbody>
   </table>
 </div>
+  <script src="../../../public/js/jquery.min.js"></script>
+  <script src="../../../public/js/bootstrap.min.js"></script>
+  <script src="../../../public/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

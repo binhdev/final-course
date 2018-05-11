@@ -20,11 +20,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tao moi user</title>
+    <title>Tạo Mới Sản Phẩm</title>
     <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
   </head>
   <body>
+    <?php include "../../menucon.php" ?>
   <div class="wrapper">
     <form method="post" action="update.php">
       <input type="hidden" value="<?php echo $id; ?>" name="id">
@@ -32,10 +33,10 @@
         <i class="flash"><?php if(isset($_SESSION["flash"])) echo $_SESSION["flash"]; ?></i>
       </div>
       <div>
-        <h1>Chinh Sua Nguoi Dung</h1>
+        <h1>Chỉnh Sữa Sản Phẩm</h1>
       </div>
       <div class="row">
-        <label>Danh muc:</label>
+        <label>Danh Mục:</label>
         <select class="form-control" name="catalog_id">
           <?php
             $sql = "select * from catalogs";
@@ -49,7 +50,7 @@
         </select>
       </div>
       <div class="row">
-        <label>Ten nguoi dung:</label>
+        <label>Tên Sản Phẩm:</label>
         <input class="form-control" type="text" name="name" value="<?php echo $name; ?>">
       </div>
       <div class="row">
@@ -57,15 +58,15 @@
         <textarea class="form-control" name="description"><?php echo $description; ?></textarea>
       </div>
       <div class="row">
-        <label>Anh:</label>
+        <label>Ảnh:</label>
         <input class="form-control" type="text" name="image" value="<?php echo $image; ?>">
       </div>
       <div class="row">
-        <label>So luong:</label>
+        <label>Số Lượng:</label>
         <input class="form-control" type="text" name="qty" value="<?php echo $qty; ?>">
       </div>
       <div class="row">
-        <label>Gia San Pham:</label>
+        <label>Giá Sản Phẩm:</label>
         <input class="form-control" type="text" name="price" value="<?php echo $price; ?>">
       </div>
       <br>
@@ -75,5 +76,8 @@
     </form>
   </div>
   </body>
+    <script src="../../../public/js/jquery.min.js"></script>
+  <script src="../../../public/js/bootstrap.min.js"></script>
+  <script src="../../../public/js/bootstrap.bundle.min.js"></script>
 </html>
 <?php unset($_SESSION["flash"]); ?>
